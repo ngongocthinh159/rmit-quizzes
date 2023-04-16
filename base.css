@@ -1,0 +1,65 @@
+:root {
+  --green-color: #08874b;
+  --green-color-light: #12b166;
+  --blue-color: #0b0b4f;
+  --grey-color: #9c9c9c;
+  --red-color: #d80026;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  padding: 8px 24px;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-blue {
+  border: 1px solid #333;
+  background-color: var(--blue-color);
+  color: white;
+}
+
+.btn-blue:hover {
+  color: white;
+}
+
+.btn-blue-border {
+  border: 1px solid var(--blue-color);
+  background-color: transparent;
+  color: var(--blue-color);
+}
+
+.btn-red {
+  background-color: var(--red-color);
+  border: none;
+  color: white;
+}
+
+.btn-icon {
+  font-size: 12px;
+  margin-right: 2px;
+}
+
+.btn--disabled {
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.d-none {
+  display: none;
+}
+
+.dragging {
+  opacity: 0.5;
+}
+
+
