@@ -18,4 +18,4 @@ Usage:
 - Open 'index.html' with live server.
 
 Screenshot:
-[thumbnail](https://drive.google.com/uc?export=download&id=1ScBloP2rOIh5iTHIEv_i6yALUM9cFPDJ)
+![Screenshot](https://drive.google.com/uc?export=download&id=1ScBloP2rOIh5iTHIEv_i6yALUM9cFPDJ)
