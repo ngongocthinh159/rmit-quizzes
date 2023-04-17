@@ -865,6 +865,22 @@ function renderEditQuiz(
     });
     dragBtn.addEventListener('dragend', (e) => {
       liQuestionItems[btnIndex].classList.remove('dragging');
+
+      // Move each question to appropriately index
+      const newQuestionArray = [];
+      const newLiQuestionItems = [
+        ...ulQuestionList.querySelectorAll('.quiz-edit__question'),
+      ];
+      newLiQuestionItems.forEach((liQuestionItem) => {
+        const id = liQuestionItem.dataset.id;
+        const question = quizClone.questions.find(
+          (question) => question.id === id
+        );
+        newQuestionArray.push(question);
+      });
+      quizClone.questions = newQuestionArray;
+
+      // Rerender
       renderEditQuiz(quizClone, quizIndex, isCreateQuiz, showQuizBody);
     });
   });
@@ -902,20 +918,6 @@ function renderEditQuiz(
     } else {
       ulQuestionList.appendChild(draggingLi);
     }
-
-    // Move each question to appropriately index
-    const newQuestionArray = [];
-    const newLiQuestionItems = [
-      ...ulQuestionList.querySelectorAll('.quiz-edit__question'),
-    ];
-    newLiQuestionItems.forEach((liQuestionItem) => {
-      const id = liQuestionItem.dataset.id;
-      const question = quizClone.questions.find(
-        (question) => question.id === id
-      );
-      newQuestionArray.push(question);
-    });
-    quizClone.questions = newQuestionArray;
   });
 }
 // renderEditQuiz(quizzes[0], 0, false, false);
