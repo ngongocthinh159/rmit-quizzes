@@ -13,9 +13,9 @@ This is a Quiz application that support 2 modes:
      - Matching question: each correct matching get total points = questionTotalPoints / numberOfMatchings (each correct matching get equal point).
      - Multiple choice question: each correct matching get total points = questionTotalPoints / numberOfCorrectAnswers (each correct matching get equal point). Each incorrect matching get total negative points = - questionTotalPoints / numberOfPossibleAnswers (each incorrect matching is deduced equal point). If final point is negative => Final point = 0.
 
-Usage:
+Demo: https://ngongocthinh159.github.io/rmit-quizzes/
 
-- Open 'index.html' with live server.
+Usage: Open 'index.html' with live server.
 
 Screenshot:
 ![Screenshot](https://drive.google.com/uc?export=download&id=1ScBloP2rOIh5iTHIEv_i6yALUM9cFPDJ)
